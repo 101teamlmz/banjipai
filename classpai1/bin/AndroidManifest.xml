@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.team.classpai"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="18" />
+
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.READ_LOGS"/>
+	<uses-permission android:name="android.permission.VIBRATE" />
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/class_log2"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            
+            android:name="com.team.classpai.view.HomeActivity"
+            android:label="@string/app_name" android:theme="@android:style/Theme.Light.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.team.classpai.view.WelcomeActivity" android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        
+         <activity   android:name="com.team.classpai.view.AddActivity" android:theme="@android:style/Theme.Light.NoTitleBar"/>
+         <activity  android:name="com.team.classpai.view.RegisterActivity" android:theme="@android:style/Theme.Light.NoTitleBar"/>
+      
+        <activity  android:name="com.team.classpai.view.LoginActicity" android:theme="@android:style/Theme.Light.NoTitleBar"/>
+         <activity  android:name="com.team.classpai.view.HomeworkActivity" android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <activity  android:name="com.team.classpai.view.Class1Activity" android:theme="@android:style/Theme.Light.NoTitleBar"/>
+         <activity  android:name="com.team.classpai.view.ActivityMine" android:theme="@android:style/Theme.Light.NoTitleBar"/>
+          <activity  android:name="com.ljp.ani.TestRolateAnimActivity" android:theme="@android:style/Theme.Light.NoTitleBar"/>
+         
+    </application>
+
+</manifest>

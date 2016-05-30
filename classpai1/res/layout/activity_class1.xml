@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="71dp"
+        layout="@layout/head_class2"
+        android:background="@drawable/cs0" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:paddingBottom="80dp" >
+                   
+            <!-- 购物小菜 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="2dp"
+                    android:text="班级一角"
+                    android:textColor="#FFFF8833"
+                    android:textSize="18sp"
+                    android:typeface="monospace" />
+                
+                <View 
+                    android:layout_width="65dp"
+                    android:layout_height="1.5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#FFFF8833"/>
+                
+                <com.team.classpai.ui.MyGridView
+                    android:id="@+id/gv_gift_class"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:columnWidth="80dp"
+                    android:horizontalSpacing="1dp"
+                    android:verticalSpacing="1dp"
+                    android:gravity="center"
+                    android:minHeight="90dp"
+                    android:numColumns="auto_fit"
+                    android:stretchMode="columnWidth" >
+                </com.team.classpai.ui.MyGridView>
+            </LinearLayout>
+            
+            <!-- 吃饭小菜 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="13dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="2dp"
+                    android:text="小派特递"
+                    android:textColor="#FFFF8833"
+                    android:textSize="18sp"
+                    android:typeface="monospace" />
+                
+                <View 
+                    android:layout_width="65dp"
+                    android:layout_height="1.5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#FFFF8833"/>
+                
+                <com.team.classpai.ui.MyGridView
+                    android:id="@+id/gv_food_class"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:columnWidth="80dp"
+                    android:horizontalSpacing="1dp"
+                    android:verticalSpacing="1dp"
+                    android:gravity="center"
+                    android:minHeight="90dp"
+                    android:numColumns="auto_fit"
+                    android:stretchMode="columnWidth" >
+                </com.team.classpai.ui.MyGridView>
+            </LinearLayout>
+
+          
+            
+            
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
